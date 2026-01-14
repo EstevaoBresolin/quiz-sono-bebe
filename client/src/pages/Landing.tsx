@@ -7,10 +7,11 @@ export default function Landing() {
     // Rola suavemente ao topo antes de abrir o link de vendas
     // (melhora a experiência em telas longas / mobile)
     window.scrollTo({ top: 0, behavior: "smooth" });
+    
     // Abrir o link após pequena demora para que a rolagem seja percebida
     setTimeout(() => {
       // TODO: Integrar com link de vendas real (Hotmart, Eduzz, Gumroad)
-      window.open("https://pay.kiwify.com.br/qK7XNX5", "_blank");
+      window.open("https://payfast.greenn.com.br/154038", "_blank");
     }, 300);
   };
 

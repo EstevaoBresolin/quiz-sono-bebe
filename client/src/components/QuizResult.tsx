@@ -12,6 +12,7 @@ export default function QuizResult({ profile, onRetake }: QuizResultProps) {
   const [, setLocation] = useLocation();
 
   const handleGoToLanding = () => {
+    window.scrollTo(0, 0);
     setLocation("/landing");
   };
   return (
@@ -112,6 +113,34 @@ export default function QuizResult({ profile, onRetake }: QuizResultProps) {
               <p className="font-semibold text-foreground">Acolhedor</p>
               <p className="text-sm text-muted-foreground">Sem julgamentos</p>
             </div>
+          </div>
+
+          {/* CTA Section */}
+          <div className="bg-gradient-to-r from-accent/10 to-secondary/10 rounded-2xl p-8 mb-8 text-center">
+             <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-3">
+              Pronto para transformar as noites do seu bebê?
+            </h2>
+            {/*<p className="text-lg text-foreground mb-6">
+              O ebook{" "}
+              <span className="font-semibold text-accent">
+                "Bons Sonhos, Pequeno"
+              </span>{" "}
+              foi criado especialmente para pais como você!
+            </p>
+            <p className="text-3xl font-bold text-accent mb-6">
+              Apenas R$ 19,90
+            </p>
+            <p className="text-base text-muted-foreground mb-6">
+              Guia prático, acolhedor e sem promessas milagrosas. Apenas
+              estratégias que funcionam.
+            </p> */}
+            <Button
+              onClick={handleGoToLanding}
+              size="lg"
+              className="bg-accent hover:bg-accent/90 text-white text-lg font-semibold px-8 py-6 rounded-full transition-all duration-300 hover:scale-105 shadow-lg"
+            >
+              Quero Noites Mais Tranquilas! 🌙
+            </Button>
           </div>
 
           {/* Footer */}
