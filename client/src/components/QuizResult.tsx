@@ -67,7 +67,7 @@ export default function QuizResult({ profile, onRetake }: QuizResultProps) {
             <Button
               onClick={handleGoToLanding}
               size="lg"
-              className="bg-accent hover:bg-accent/90 text-white text-lg font-semibold px-8 py-6 rounded-full transition-all duration-300 hover:scale-105 shadow-lg"
+              className="bg-accent hover:bg-accent/90 text-white text-lg font-semibold px-8 py-7 md:py-6 rounded-full transition-all duration-300 hover:scale-105 shadow-lg min-h-[98px]"
             >
               Quero Noites Mais Tranquilas! 🌙
             </Button>
@@ -117,7 +117,7 @@ export default function QuizResult({ profile, onRetake }: QuizResultProps) {
 
           {/* CTA Section */}
           <div className="bg-gradient-to-r from-accent/10 to-secondary/10 rounded-2xl p-8 mb-8 text-center">
-             <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-3">
+            <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-3">
               Pronto para transformar as noites do seu bebê?
             </h2>
             {/*<p className="text-lg text-foreground mb-6">
@@ -137,7 +137,7 @@ export default function QuizResult({ profile, onRetake }: QuizResultProps) {
             <Button
               onClick={handleGoToLanding}
               size="lg"
-              className="bg-accent hover:bg-accent/90 text-white text-lg font-semibold px-8 py-6 rounded-full transition-all duration-300 hover:scale-105 shadow-lg"
+              className="bg-accent hover:bg-accent/90 text-white text-lg font-semibold px-8 py-7 md:py-6 rounded-full transition-all duration-300 hover:scale-105 shadow-lg min-h-[98px]"
             >
               Quero Noites Mais Tranquilas! 🌙
             </Button>
