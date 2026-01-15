@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Define gradients -->
+  <defs>
+    <linearGradient id="moonGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFC700;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="bgGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#1A3A52;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0F2438;stop-opacity:1" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="95" fill="url(#bgGradient)" stroke="#E8A89B" stroke-width="2"/>
+  
+  <!-- Moon -->
+  <path d="M 70 60 Q 85 50 95 60 Q 90 75 75 80 Q 60 75 70 60" fill="url(#moonGradient)" filter="drop-shadow(0 2px 4px rgba(0,0,0,0.3))"/>
+  
+  <!-- Stars around moon -->
+  <g fill="#FFD700" filter="drop-shadow(0 1px 2px rgba(0,0,0,0.2))">
+    <!-- Star 1 (top right) -->
+    <polygon points="120,45 123,52 131,52 125,57 128,65 120,60 112,65 115,57 109,52 117,52" />
+    
+    <!-- Star 2 (top left) -->
+    <polygon points="50,50 52,56 59,56 53,60 55,67 50,63 45,67 47,60 41,56 48,56" />
+    
+    <!-- Star 3 (right) -->
+    <polygon points="140,90 142,95 148,95 143,99 145,105 140,101 135,105 137,99 132,95 138,95" />
+    
+    <!-- Star 4 (bottom right) -->
+    <polygon points="125,135 127,140 133,140 128,144 130,150 125,146 120,150 122,144 117,140 123,140" />
+    
+    <!-- Star 5 (bottom left) -->
+    <polygon points="55,140 57,145 63,145 58,149 60,155 55,151 50,155 52,149 47,145 53,145" />
+  </g>
+  
+  <!-- Sleeping baby silhouette (simplified) -->
+  <g fill="#E8A89B" opacity="0.8">
+    <!-- Head -->
+    <circle cx="100" cy="120" r="12"/>
+    <!-- Body -->
+    <ellipse cx="100" cy="138" rx="10" ry="14"/>
+    <!-- Arm -->
+    <ellipse cx="88" cy="135" rx="6" ry="10" transform="rotate(-30 88 135)"/>
+  </g>
+  
+  <!-- Decorative clouds -->
+  <g fill="rgba(255,255,255,0.3)">
+    <!-- Cloud 1 (bottom left) -->
+    <path d="M 30 160 Q 25 155 35 150 Q 40 148 45 152 Q 50 155 45 160 Z"/>
+    
+    <!-- Cloud 2 (bottom right) -->
+    <path d="M 155 165 Q 150 160 160 155 Q 165 153 170 157 Q 175 160 170 165 Z"/>
+  </g>
+  
+  <!-- Optional: Add text for branding -->
+  <text x="100" y="185" font-family="Poppins, sans-serif" font-size="10" font-weight="bold" text-anchor="middle" fill="#2C3E50" opacity="0.6">BONS SONHOS</text>
+</svg>
