@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { CheckCircle2, Star, Users, Zap } from "lucide-react";
+import { CheckCircle2, Star, Users, Zap, ChevronDown } from "lucide-react";
 
 export default function Landing() {
   const handleBuyNow = () => {
@@ -19,7 +19,7 @@ export default function Landing() {
     <div className="min-h-screen w-full bg-white">
       {/* Hero Section - Conversão */}
       <section
-        className="relative min-h-screen flex items-center justify-center px-4 py-12"
+        className="relative min-h-[85vh] flex items-center justify-center px-4 py-16 md:py-20"
         style={{
           backgroundImage: "url(/images/landing-hero-section.png)",
           backgroundSize: "cover",
@@ -64,10 +64,21 @@ export default function Landing() {
             Menos que um café. Impacto para a vida toda.
           </p>
         </div>
+
+        {/* Scroll Indicator */}
+        <a
+          href="#conteudo"
+          className="absolute bottom-6 left-1/2 -translate-x-1/2 text-white/90 hover:text-white transition-colors"
+        >
+          <div className="flex flex-col items-center gap-1">
+            <span className="text-sm font-medium">Role para ver mais</span>
+            <ChevronDown className="w-6 h-6 animate-bounce" />
+          </div>
+        </a>
       </section>
 
       {/* Urgency Section */}
-      <section className="py-12 md:py-16 px-4 bg-gradient-to-r from-accent/20 to-secondary/20">
+      <section id="conteudo" className="py-12 md:py-16 px-4 bg-gradient-to-r from-accent/20 to-secondary/20">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-lg md:text-xl font-semibold text-foreground">
             ⏰ Não deixe para depois. Cada noite de sono perdida é uma
